@@ -1,0 +1,239 @@
+.all-nav {
+    width: 100%;
+    height: 11vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background: var(--black);
+    color: white;
+}
+
+.small-screen {
+    display: none;
+}
+
+.bar-nav {
+    justify-content: space-between;
+    width: 90%;
+    height: 11vh;
+    align-items: center;
+    display: flex;
+}
+
+.list-nav {
+    display: flex;
+    height: 11vh;
+    width: auto;
+}
+
+.list-nav img {
+    cursor: pointer;
+}
+
+.list-items {
+    display: flex;
+    margin-left: 130px;
+    gap: 50px;
+}
+
+.list-items li {
+    font-size: 22px;
+    margin-top: 55px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-items li:hover {
+    transform: scale(1.1);
+    color: var(--red);
+    transition: 0.2s ease-in-out;
+}
+
+.list-items li:active {
+    transform: scale(0.9);
+    color: var(--gray);
+}
+
+.icon-nav {
+    display: flex;
+    height: 11vh;
+}
+.icon-nav hr {
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 55px;
+    margin-right: 20px;
+}
+
+.icon-nav p {
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top: 60px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-nav p:hover {
+    transform: scale(1.1);
+    color: var(--red);
+    transition: 0.2s ease-in-out;
+}
+
+.icon-nav p:active {
+    transform: scale(0.9);
+    color: var(--gray);
+}
+
+.icon-self-nav {
+    margin: 62px 10px 0px 0px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-self-nav:hover {
+    transform: scale(1.1);
+    color: var(--red);
+    transition: 0.2s ease-in-out;
+}
+
+.icon-self-nav:active {
+    color: red;
+    transform: scale(1.1);
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--black);
+    height: 40vh;
+    width: 30vh;
+    position: absolute;
+    right: 7%;
+    top: 2.5vh;
+    padding: 10vh 3% 2vh;
+    border-radius: 10px;
+}
+
+.small-screen button {
+    background-color: transparent;
+    /* border: 1px solid white; */
+    padding: 5px 10px 3px 10px;
+    margin-right: 8%;
+    border: none;
+}
+
+.items-sidebar {
+    font-size: 25px;
+}
+
+.items-sidebar li {
+    margin-bottom: 10px;
+}
+
+.open-side {
+    font-size: 35px;
+    color: white;
+    border: 1px solid white;
+}
+
+.close-side {
+    font-size: 45px;
+    color: white;
+}
+
+
+@media (max-width: 1600px){
+
+    .all-nav {
+        height: 15vh;
+    }
+
+    .list-nav {
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .list-items {
+        position: relative;
+        left: -50px;
+        margin-top: -20px;
+    }
+
+    .icon-nav {
+        margin-top: -30px;
+    }
+
+}
+
+@media (max-width: 1450px){
+
+    .all-nav {
+        height: 10vh;
+    }
+
+    .list-nav {
+        display: none;
+    }
+
+    .icon-nav {
+        display: none;
+    }
+
+    .small-screen {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 15vh;
+    }
+
+    
+    }
+
+    @media (max-width: 700px){
+
+        .sidebar {
+            height: 100vh;
+            width: 100%;
+            padding-bottom: 10vh;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .items-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .close-side {
+            margin-left: 60px;
+        }
+        
+        .items-sidebar li:hover {
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+            color: var(--gray);
+        }
+
+        .items-sidebar li:active {
+            transform: scale(0.9);
+            transition: 0.3s ease-in-out;
+            color: var(--red);
+        }
+
+        .small-screen img {
+            width: 20vh;
+            height: auto;
+            margin-left: -80px
+        }
+
+        .small-screen {
+            width: 40vh;
+            justify-content: space-between;
+        }
+
+    }
+

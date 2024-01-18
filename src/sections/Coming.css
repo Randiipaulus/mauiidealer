@@ -1,0 +1,50 @@
+.all-coming {
+    background: var(--black);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    overflow: hidden;
+}
+
+.all-coming p {
+    color: var(--red);
+    font-size: var(--b1);
+    text-align: center;
+}
+
+.all-coming span {
+    color: var(--white);
+    font-size: var(--b2);
+}
+
+.all-coming hr {
+    width: 30vh;
+    border: 1.5px solid var(--gray);
+    margin-left: 43%;
+    margin-top: 10px;
+}
+
+.slide-coming {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.slide-coming p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 90px;
+}
+
+.slide-coming img {
+    height: 40vh;
+    width: auto;
+}
+
+.all-coming i {
+    font-size: 22px;
+    text-align: left;
+    color: var(--red);
+    font-weight: 600;
+}

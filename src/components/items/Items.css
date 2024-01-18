@@ -1,0 +1,148 @@
+.all-item {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.title-item {
+    font-size: var(--b1);
+    color: var(--black);
+    font-weight: 600;
+}
+
+.sec-title-item {
+    font-size: var(--b2);
+    color: var(--red);
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+.container-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 5vh;
+    padding-left: 6%;
+    overflow: hidden;
+    gap: 9vh;
+}
+
+.container-item li {
+    background-color: var(--black);
+    width: 40vh;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-item li img {
+    width: 40vh;
+    height: auto;
+}
+
+.li-item {
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.li-item:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.li-item:active {
+    transform: scale(0.9);
+}
+
+.li-item p { 
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.info-item {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40vh;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info-item p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.info-item hr {
+    height: 20px;
+    margin-top: 14px;
+}
+
+.li-item i {
+    font-size: 23px;
+}
+
+.extra-item {
+    display: block;
+    margin: 10px 10px 20px 0px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.extra-item li {
+    font-size: 18px;
+}
+
+.icon-item1 {
+    margin-right: 8px;
+}
+
+.icon-item2 {
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.icon-item3 {
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.icon-item4 {
+    margin-right: 8px;
+}
+
+.icon-item5 {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+@media (max-width: 1400px){
+
+    .container-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
